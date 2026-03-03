@@ -21,29 +21,47 @@ const VideosSection = () => {
                 <div
                     className="w-[120px] h-[180px] sm:w-[220px] sm:h-[340px] md:w-[260px] md:h-[400px] rounded-2xl border-[5px] border-[#6b21a8] bg-gradient-to-b from-gray-900 to-[#0a0a0a] shadow-[0_0_15px_rgba(107,33,168,0.3)] transition-transform hover:scale-105 cursor-pointer duration-300"
                 >
-                    {/* Add your image/video for Left Card here */}
+                    <iframe
+                        className="w-full h-full"
+                        src="https://www.youtube.com/embed/M7XDoqXVBn4?autoplay=1&loop=1&mute=1&playlist=M7XDoqXVBn4"
+                        title='"Worth the Climb" | OREO Spec Spot'
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                    ></iframe>
                 </div>
 
                 {/* Center Card (Larger) */}
                 <div
                     className="w-[160px] h-[240px] sm:w-[280px] sm:h-[420px] md:w-[320px] md:h-[500px] rounded-2xl border-[5px] border-[#8b5cf6] bg-black relative overflow-hidden shadow-[0_0_25px_rgba(139,92,246,0.4)] z-10 transition-transform hover:scale-105 cursor-pointer duration-300"
                 >
-                    {/* Mimicking the subtle gold design from your screenshot's center card */}
-                    <div className="absolute top-0 w-full h-[30%] bg-gradient-to-b from-yellow-600/20 to-transparent"></div>
-                    <div className="absolute bottom-0 w-full h-[40%] bg-gradient-to-t from-yellow-600/30 to-transparent flex justify-center items-end pb-8">
-                        {/* Fake abstract waves at bottom */}
-                        <div className="w-24 h-24 border-b-[3px] border-yellow-500/50 rounded-full blur-[1px]"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/LQjwGVcGnUU?autoplay=1&loop=1&mute=1&playlist=LQjwGVcGnUU"
+                            title="Such A Funny Life Official Theatrical Trailer"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        ></iframe>
                     </div>
-                    {/* Add your main center image/video here */}
                 </div>
 
                 {/* Right Card (Smaller - Light textured look from screenshot) */}
                 <div
                     className="w-[120px] h-[180px] sm:w-[220px] sm:h-[340px] md:w-[260px] md:h-[400px] rounded-2xl border-[5px] border-[#6b21a8] bg-[#e5e5e5] shadow-[0_0_15px_rgba(107,33,168,0.3)] transition-transform hover:scale-105 cursor-pointer relative overflow-hidden duration-300"
                 >
-                    {/* Mimicking the static/noise texture seen in the right card */}
-                    <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
-                    {/* Add your image/video for Right Card here */}
+                    <iframe
+                        className="w-full h-full"
+                        src="https://www.youtube.com/embed/qUFJs9glVoU?autoplay=1&loop=1&mute=1&playlist=qUFJs9glVoU"
+                        title="DISCOS El Popular 2026 SPOT"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    ></iframe>
                 </div>
 
             </div>
