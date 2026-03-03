@@ -1,0 +1,1 @@
+export const baseUrl = "https://open-sense-snko.vercel.app"

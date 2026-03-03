@@ -1,0 +1,73 @@
+# # Enable compression
+# <IfModule mod_deflate.c>
+#     AddOutputFilterByType DEFLATE text/plain
+#     AddOutputFilterByType DEFLATE text/html
+#     AddOutputFilterByType DEFLATE text/css
+#     AddOutputFilterByType DEFLATE application/javascript
+#     AddOutputFilterByType DEFLATE text/xml
+#     AddOutputFilterByType DEFLATE application/xml
+#     AddOutputFilterByType DEFLATE application/xhtml+xml
+#     AddOutputFilterByType DEFLATE application/rss+xml
+#     AddOutputFilterByType DEFLATE application/javascript
+#     AddOutputFilterByType DEFLATE application/x-javascript
+# </IfModule>
+
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+
+#   # Redirect to trailing slash for directories (for consistency with trailingSlash: true)
+#   RewriteCond %{REQUEST_FILENAME} !-f
+#   RewriteCond %{REQUEST_URI} !/$
+#   RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{1,5}$
+#   RewriteRule ^(.*)$ /$1/ [R=301,L]
+
+#   # Don't rewrite requests for existing files
+#   RewriteCond %{REQUEST_FILENAME} -f [OR]
+#   RewriteCond %{REQUEST_FILENAME} -d
+#   RewriteRule ^ - [L]
+
+#   # Don't rewrite for specific static assets
+#   RewriteRule ^_next/ - [L]
+#   RewriteRule ^static/ - [L]
+#   RewriteRule ^favicon\.ico$ - [L]
+#   RewriteRule ^sitemap\.xml$ - [L]
+#   RewriteRule ^robots\.txt$ - [L]
+#   RewriteRule ^manifest\.json$ - [L]
+
+#   # Handle API routes (if any)
+#   RewriteRule ^api/ - [L]
+
+#   # For all other requests, serve index.html to allow client-side routing
+#   RewriteRule ^(.*)$ /index.html [L]
+# </IfModule>
+
+# # Set correct MIME types
+# <IfModule mod_mime.c>
+#   AddType application/json .json
+#   AddType application/javascript .js
+#   AddType text/css .css
+#   AddType image/svg+xml .svg
+#   AddType image/webp .webp
+#   AddType video/mp4 .mp4
+#   AddType application/font-woff .woff
+#   AddType application/font-woff2 .woff2
+#   AddType application/vnd.ms-fontobject .eot
+#   AddType font/ttf .ttf
+#   AddType font/otf .otf
+# </IfModule>
+
+# # Security headers
+# <IfModule mod_headers.c>
+#   Header always set X-Content-Type-Options nosniff
+#   Header always set X-Frame-Options DENY
+#   Header always set X-XSS-Protection "1; mode=block"
+# </IfModule>
+
+# Redirect all routes to index.html for SPA
+Options -Indexes
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L,QSA]
+
