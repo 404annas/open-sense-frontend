@@ -5,14 +5,14 @@ const VideosSection = () => {
         <section className="relative bg-black min-h-screen pt-20 pb-10 px-4 md:px-8 flex flex-col items-center">
 
             {/* --- Text Content Section --- */}
-            <div className="max-w-[1000px] mx-auto text-center mb-16">
+            {/* <div className="max-w-[1000px] mx-auto text-center mb-16">
                 <h2 className="text-white text-4xl md:text-[3.5rem] font-bold mb-6">
                     Snapchat Discovery Shows
                 </h2>
                 <p className="text-white text-base md:text-lg leading-normal px-4 md:px-0 font-medium opacity-90 tracking-wide">
                     Daily Vertex LLC has been working closely with Snap on their Discover program and has successfully launched numerous unique shows. We facilitate the entire process, from pitching a show to editing and optimizing your existing content to make it suitable for Snap. Our deep understanding of what resonates on the platform in terms of content and edits is reflected in our impressive monthly results. We consistently generate substantial monthly views, turning this into a highly lucrative new revenue stream for our creators. Our expertise in the Snap ecosystem allows us to maximize the potential of your content, ensuring it reaches and engages the right audience on this dynamic platform.
                 </p>
-            </div>
+            </div> */}
 
             {/* --- Cards Section --- */}
             <div className="flex flex-row items-center justify-center gap-4 md:gap-6 w-full max-w-6xl mt-4">
