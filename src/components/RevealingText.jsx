@@ -2,6 +2,7 @@
 import React, { useRef, useMemo, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import Cards from './Cards';
+import VideosSection from './VideosSection';
 
 const sentence = [
     { type: 'word', text: 'WE' },
@@ -127,6 +128,7 @@ const RevealingText = () => {
                     </div>
                 </div>
             </section>
+            <VideosSection />
             <Cards />
         </div>
     );

@@ -7,6 +7,7 @@ import Work from "@/sections/Work/Work";
 import Works from "@/sections/Works/Works";
 import Image from "next/image";
 import HomeSEO from "@/seo/HomeSEO";
+import VideosSection from "@/components/VideosSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="scroll-smooth transition-all duration-200">
         <Hero />
         <Work />
+        {/* <VideosSection /> */}
         {/* <Works /> */}
         {/* <RevealingText /> */}
         <ContactUs />
