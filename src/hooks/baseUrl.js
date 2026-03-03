@@ -1,1 +1,1 @@
-export const baseUrl = "https://open-sense-snko.vercel.app"
+export const baseUrl = "https://open-sense-backend.vercel.app"
